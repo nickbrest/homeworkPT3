@@ -6,9 +6,12 @@ def convert_dec_bin(numb):
    while numb > 0:
       temp = numb % 2
       list.append(temp)
+      # list.insert(0, temp)
       numb //=2
    return list[::-1]
+   # return list
  
 number = int(input('Введите число для преобразования: '))
 print(*convert_dec_bin(number))
+# print(*convert_dec_bin(number), sep='')
 
